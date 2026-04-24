@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 
         <title>Rajesh Kumar | iOS Developer</title>
+        <meta name="description" content="Senior iOS Engineer with 7+ years experience building secure mobile banking apps, SDK integrations, and scalable fintech products.">
+        <meta name="keywords" content="iOS Developer, Swift, SwiftUI, UIKit, Fintech, Banking Apps">
 
         <link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
         <link rel="stylesheet" href="assets/css/font-awesome.min.css">
@@ -19,6 +21,313 @@
         <link rel="stylesheet" href="assets/css/bootsnav.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/responsive.css">
+
+        <style>
+            body { font-family: -apple-system, sans-serif; }
+            section { padding: 80px 0; }
+            .hero { background: #0f172a; color: white; padding: 120px 0; text-align: center; }
+            .hero h1 { font-size: 48px; font-weight: 700; }
+            .hero p { font-size: 18px; opacity: 0.8; }
+            .btn-main { background: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; }
+            .section-title { text-align: center; margin-bottom: 40px; }
+            .card { padding: 20px; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); margin-bottom: 20px; }
+            .skill { display: inline-block; padding: 8px 12px; background: #f1f5f9; margin: 5px; border-radius: 6px; }
+            .footer { background: #0f172a; color: white; text-align: center; padding: 20px; }
+
+            .project-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            height: 100%;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            }
+
+            .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+            }
+
+            /* Header */
+            .project-header h3 {
+            font-size: 20px;
+            font-weight: 600;
+            }
+
+            .project-tag {
+            font-size: 12px;
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 4px 10px;
+            border-radius: 20px;
+            }
+
+            /* Description */
+            .project-description {
+            margin: 15px 0;
+            color: #555;
+            }
+
+            /* Tech Stack */
+            .project-tech {
+            margin-bottom: 15px;
+            }
+
+            .project-tech span {
+            display: inline-block;
+            background: #f1f5f9;
+            padding: 6px 10px;
+            margin: 4px;
+            border-radius: 6px;
+            font-size: 12px;
+            }
+
+            /* Impact */
+            .project-impact {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 15px;
+            }
+
+            /* Buttons */
+            .project-actions a {
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 10px;
+            }
+
+            .btn-view {
+            background: #2563eb;
+            color: white;
+            padding: 8px 14px;
+            border-radius: 6px;
+            }
+
+            .btn-github {
+            border: 1px solid #ddd;
+            padding: 8px 14px;
+            border-radius: 6px;
+            color: #333;
+            }
+
+            .project-grid {
+            display: flex;
+            flex-wrap: wrap;
+            }
+
+            .project-grid > div {
+            width: 33.333%;
+            padding: 10px;
+            }
+
+            @media (max-width: 992px) {
+            .project-grid > div {
+                width: 50%;
+            }
+            }
+
+            @media (max-width: 576px) {
+            .project-grid > div {
+                width: 100%;
+            }
+            }
+
+            .contact-section {
+            padding: 80px 0;
+            background: #f8fafc;
+            }
+
+            .section-subtitle {
+            color: #666;
+            margin-top: 10px;
+            }
+
+            .contact-wrapper {
+            margin-top: 40px;
+            }
+
+            .contact-card {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            height: 100%;
+            transition: 0.3s;
+            }
+
+            .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            }
+
+            /* CTA Side */
+            .contact-cta h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+            }
+
+            .contact-cta p {
+            color: #555;
+            margin-bottom: 20px;
+            }
+
+            .contact-actions a {
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            margin-right: 10px;
+            font-size: 14px;
+            }
+
+            .btn-primary {
+            background: #2563eb;
+            color: #fff;
+            }
+
+            .btn-secondary {
+            border: 1px solid #ddd;
+            color: #333;
+            }
+
+            /* Info Side */
+            .contact-info h3 {
+            margin-bottom: 20px;
+            }
+
+            .contact-item {
+            margin-bottom: 15px;
+            font-size: 16px;
+            }
+
+            .contact-item span {
+            margin-right: 10px;
+            }
+
+            .site-footer {
+            background: #0f172a;
+            color: #fff;
+            padding: 60px 0 20px;
+            }
+
+            .footer-content {
+            margin-bottom: 30px;
+            }
+
+            /* Brand */
+            .footer-brand h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            }
+
+            .footer-brand p {
+            color: #cbd5e1;
+            font-size: 14px;
+            }
+
+            /* Links */
+            .footer-links h4,
+            .footer-social h4 {
+            margin-bottom: 15px;
+            }
+
+            .footer-links ul {
+            list-style: none;
+            padding: 0;
+            }
+
+            .footer-links ul li {
+            margin-bottom: 8px;
+            }
+
+            .footer-links a {
+            color: #cbd5e1;
+            text-decoration: none;
+            transition: 0.3s;
+            }
+
+            .footer-links a:hover {
+            color: #fff;
+            }
+
+            /* Social */
+            .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 18px;
+            color: #cbd5e1;
+            transition: 0.3s;
+            }
+
+            .social-icons a:hover {
+            color: #2563eb;
+            }
+
+            .footer-note {
+            margin-top: 10px;
+            font-size: 13px;
+            color: #94a3b8;
+            }
+
+            /* Bottom */
+            .footer-bottom {
+            border-top: 1px solid #1e293b;
+            padding-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            color: #94a3b8;
+            }
+
+
+            .education-section {
+            padding: 80px 0;
+            background: #f8fafc;
+            }
+
+            .section-subtitle {
+            color: #666;
+            margin-top: 10px;
+            }
+
+            .education-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            transition: 0.3s;
+            }
+
+            .education-card:hover {
+            transform: translateY(-5px);
+            }
+
+            .education-meta {
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 10px;
+            }
+
+            .education-location {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+            }
+
+            .education-desc {
+            color: #555;
+            }
+
+            .learning-tags span {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 6px 10px;
+            margin: 5px 5px 0 0;
+            border-radius: 6px;
+            font-size: 12px;
+            }
+            
+        </style>
 
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -67,7 +376,7 @@
                         <div class="header-text">
                             <span class="hero-label">Karachi, Pakistan</span>
                             <h2>Rajesh Kumar</h2>
-                            <p>Senior iOS developer building secure, production-ready banking apps</p>
+                            <p>Senior iOS Engineer specializing in secure mobile banking apps, SDK integrations, and scalable fintech products used by 350k+ users.</p>
                             <div class="hero-actions">
                                 <a href="assets/download/Rajesh-Kumar-Resume.pdf" download>download resume</a>
                                 <a class="secondary-cta smooth-anchor" href="#contact">get in touch</a>
@@ -78,6 +387,39 @@
             </div>
         </section>
 
+        <!-- WHAT I DO -->
+        <section>
+            <div class="container">
+                <div class="section-title">
+                <h2>What I Do</h2>
+                </div>
+
+                <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                    <h4>📱 iOS Development</h4>
+                    <p>Building scalable apps using Swift, UIKit, and SwiftUI with clean architecture.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                    <h4>🔐 Secure Fintech Apps</h4>
+                    <p>Experience with SSL pinning, encryption, and secure banking workflows.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                    <h4>🧩 SDK Integration</h4>
+                    <p>Integrated Onfido, Jumio, and custom SDKs for onboarding and verification.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- ABOUT ME -->
         <section id="about" class="about">
             <div class="section-heading text-center">
                 <h2>about me</h2>
@@ -94,42 +436,27 @@
                                     I am an inquisitive and energetic computer science graduate with a strong foundation in programming logic, problem solving, and team collaboration. My work focuses on building reliable iOS applications with Swift, UIKit, SwiftUI, and modern architectures, while balancing product delivery, technical quality, and business requirements.
                                 </p>
                                 <div class="row">
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-6">
                                         <div class="single-about-add-info">
                                             <h3>phone</h3>
                                             <p><a href="tel:+923312746166">+92 331 2746166</a></p>
                                         </div>
                                     </div>
-                                    <div class="col-sm-4">
+                                    <div class="col-sm-6">
                                         <div class="single-about-add-info">
                                             <h3>email</h3>
                                             <p><a href="mailto:rajeshpremani68@gmail.com">rajeshpremani68@gmail.com</a></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-4">
-                                        <div class="single-about-add-info">
-                                            <h3>location</h3>
-                                            <p>Karachi, Pakistan</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-offset-1 col-sm-5">
-                            <div class="single-about-img profile-summary-card">
-                                <div class="profile-summary-inner">
-                                    <div class="profile-initials">RK</div>
-                                    <h3>Professional snapshot</h3>
-                                    <ul class="summary-metrics">
-                                        <li><strong>7+ years</strong><span>iOS development experience</span></li>
-                                        <li><strong>350k+</strong><span>users supported across banking apps</span></li>
-                                        <li><strong>Swift + SwiftUI</strong><span>production apps and SDK work</span></li>
-                                        <li><strong>Banking domain</strong><span>security, onboarding, and mobile finance</span></li>
-                                    </ul>
-                                </div>
-                                <div class="about-list-icon">
-                                    <ul>
-                                        <li>
+							<div class="single-about-img">
+								<img src="assets/images/about/profileImage.png" alt="profile_image">
+								<div class="about-list-icon">
+									<ul>
+										<li>
                                             <a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank" rel="noopener noreferrer">
                                                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                                             </a>
@@ -144,16 +471,90 @@
                                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                             </a>
                                         </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+							</div>
+						</div>
+                        
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="education" class="education">
+        <section id="education" class="education-section">
+            <div class="container">
+
+                <div class="section-heading text-center">
+                <h2>Education</h2>
+                <p class="section-subtitle">Academic background and continuous learning<br></p>
+                </div>
+
+                <div class="row">
+
+                <!-- Degree -->
+                <div class="col-md-6">
+                    <div class="education-card">
+                    <h3>Bachelor of Computer Science</h3>
+                    <p class="education-meta">2015 – 2018</p>
+                    <h4>University of Sindh</h4>
+                    <p class="education-location">Jamshoro, Pakistan</p>
+
+                    <p class="education-desc">
+                        Built a strong foundation in software engineering, algorithms, and problem solving,
+                        which shaped my approach to scalable and reliable mobile application development.
+                    </p>
+                    </div>
+                </div>
+
+                <!-- Continuous Learning -->
+                <div class="col-md-6">
+                    <div class="education-card">
+                        <h3>Continuous Learning</h3>
+                        <p class="education-meta">Ongoing</p>
+
+                        <p class="education-desc">
+                        Actively expanding my technical expertise beyond mobile development to better understand
+                        full-stack system architecture, backend services, and scalable application design.
+                        Continuously improving my iOS engineering skills while exploring backend technologies
+                        to build more complete and robust solutions.
+                        </p>
+
+                        <div class="learning-tags">
+                        <span>SwiftUI</span>
+                        <span>Combine</span>
+                        <span>System Design</span>
+                        <span>Backend Development</span>
+                        <span>Spring Framework</span>
+                        <span>Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-md-6">
+                    <div class="education-card">
+                    <h3>Continuous Learning</h3>
+                    <p class="education-meta">Ongoing</p>
+
+                    <p class="education-desc">
+                        Actively exploring modern iOS technologies including SwiftUI, Combine, and advanced
+                        app architecture patterns. Regularly follow industry updates and best practices
+                        to stay aligned with evolving mobile engineering standards.
+                    </p>
+
+                    <div class="learning-tags">
+                        <span>SwiftUI</span>
+                        <span>Combine</span>
+                        <span>Clean Architecture</span>
+                        <span>System Design</span>
+                    </div>
+                    </div>
+                </div> -->
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section id="education" class="education">
             <div class="section-heading text-center">
                 <h2>education</h2>
             </div>
@@ -226,77 +627,117 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="skills" class="skills">
-            <div class="skill-content">
-                <div class="section-heading text-center">
-                    <h2>skills</h2>
-                </div>
-                <div class="container">
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>Core iOS</h3>
-                            <div class="skill-pills">
-                                <span>Swift</span>
-                                <span>Xcode</span>
-                                <span>UIKit</span>
-                                <span>SwiftUI</span>
-                                <span>Storyboard</span>
-                                <span>Auto Layout</span>
-                                <span>Cocoa Touch</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Architecture & Patterns</h3>
-                            <div class="skill-pills">
-                                <span>MVC</span>
-                                <span>MVVM</span>
-                                <span>VIPER</span>
-                                <span>Delegate Pattern</span>
-                                <span>Design Patterns</span>
-                                <span>SDK Development</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Data & Device</h3>
-                            <div class="skill-pills">
-                                <span>Core Data</span>
-                                <span>Realm</span>
-                                <span>User Defaults</span>
-                                <span>Keychain</span>
-                                <span>APNs</span>
-                                <span>Combine</span>
-                            </div>
-                        </div>
-                        <div class="skill-category">
-                            <h3>Delivery & Integration</h3>
-                            <div class="skill-pills">
-                                <span>REST APIs</span>
-                                <span>Async/Await</span>
-                                <span>GCD</span>
-                                <span>Git</span>
-                                <span>TestFlight</span>
-                                <span>App Store Deployment</span>
-                                <span>CocoaPods</span>
-                            </div>
-                        </div>
-                    </div>
+        <!--skills start -->
+		<section id="skills" class="skills">
+				<div class="skill-content">
+					<div class="section-heading text-center">
+						<h2>Technical skills</h2>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">Swift</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													  
+												</div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">SwiftUI</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>85%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">UIKit</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+												   
+											   </div>
+											</div>
+											<h3>95%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Xcode</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">Storyboard</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+													
+												</div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Auto Layout</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>85%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Design Patterns</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="10" aria-valuemax="100" style="">
+												   
+											   </div>
+											</div>
+											<h3>97%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Git</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+												    
+											   </div>
+											</div>
+											<h3>90%</h3>	
+										</div>
+									</div><!-- /.barWrapper -->
+								</div>
+							</div>
+						</div><!-- /.row -->
+					</div>	<!-- /.container -->		
+				</div><!-- /.skill-content-->
 
-                    <div class="soft-skills-panel">
-                        <h3>Soft skills</h3>
-                        <div class="skill-pills">
-                            <span>Critical Thinking</span>
-                            <span>Active Learning</span>
-                            <span>Complex Problem Solving</span>
-                            <span>Innovative Thinking</span>
-                            <span>Logic</span>
-                            <span>Team Player Attitude</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+		</section>
 
         <section id="experience" class="experience">
             <div class="section-heading text-center">
@@ -395,6 +836,7 @@
             </div>
         </section>
 
+        <!-- PROJECTS -->
         <section id="portfolio" class="portfolio">
             <div class="portfolio-details">
                 <div class="section-heading text-center">
@@ -403,107 +845,153 @@
                 <div class="container">
                     <div class="portfolio-content">
                         <div class="row project-grid">
-                            <div class="col-md-4 col-sm-6">
-                                <article class="project-card">
-                                    <h3>Ziraat Bank Azerbaijan</h3>
-                                    <p class="project-stack">REST APIs, Realm, SSL Pinning</p>
-                                    <p>Mobile banking application built to help customers manage banking activities securely from their smartphones.</p>
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <article class="project-card">
-                                    <h3>Alternatif Bank</h3>
-                                    <p class="project-stack">REST APIs, Realm, SSL Pinning</p>
-                                    <p>Worked through analysis to production delivery for a commercial banking app serving customers in Turkey.</p>
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <article class="project-card">
-                                    <h3>eCrediMax</h3>
-                                    <p class="project-stack">Jumio SDK, VIPER, REST APIs</p>
-                                    <p>Led iOS development for Bahrain customer onboarding, helping more than 8,000 users apply for credit and debit cards.</p>
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <article class="project-card">
-                                    <h3>Faysal Digibank</h3>
-                                    <p class="project-stack">Core Data, MVC, Data Encryption</p>
-                                    <p>Contributed from analysis to release for a large-scale banking app with more than 350,000 signed-up users.</p>
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <article class="project-card">
-                                    <h3>mBankIslami</h3>
-                                    <p class="project-stack">Realm, MVVM, SSL Pinning</p>
-                                    <p>Built and supported a mobile banking application used by more than 150,000 customers.</p>
-                                </article>
-                            </div>
-                            <div class="col-md-4 col-sm-6">
-                                <article class="project-card">
-                                    <h3>Minhas Portal &amp; CCiConnect</h3>
-                                    <p class="project-stack">Core Data, MVC, REST APIs</p>
-                                    <p>Delivered internal and field operations apps for employee workflows, attendance, payroll access, and sales force monitoring.</p>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact" class="contact">
-            <div class="section-heading text-center">
-                <h2>contact me</h2>
-            </div>
-            <div class="container">
-                <div class="contact-content">
-                    <div class="row">
-                        <div class="col-md-offset-1 col-md-5 col-sm-6">
-                            <div class="single-contact-box contact-cta">
-                                <h3>Let&apos;s build reliable iOS products</h3>
-                                <p>
-                                    I am open to iOS development opportunities involving mobile banking, SDKs, modern app architecture, and long-term product ownership.
+                            <!-- Ziraat -->
+                            <div class="col-md-4 col-sm-6">
+                                <article class="project-card">
+                                <h3>Ziraat Bank Azerbaijan</h3>
+                                <span class="project-tag">Fintech</span>
+
+                                <p class="project-description">
+                                    Developed a secure mobile banking application enabling users to manage accounts,
+                                    transfer funds, and perform transactions with encrypted communication.
                                 </p>
-                                <div class="contact-cta-actions">
-                                    <a class="contact-btn contact-link-btn" href="mailto:rajeshpremani68@gmail.com">email me</a>
-                                    <a class="contact-btn contact-link-btn alt" href="assets/download/Rajesh-Kumar-Resume.pdf" download>download cv</a>
+
+                                <div class="project-tech">
+                                    <span>Swift</span>
+                                    <span>UIKit</span>
+                                    <span>Storyboard</span>
+                                    <span>REST APIs</span>
                                 </div>
+
+                                <p class="project-impact">
+                                    <strong>Impact:</strong> Improved transaction security and reliability for thousands of users.
+                                </p>
+                                </article>
                             </div>
-                        </div>
-                        <div class="col-md-offset-1 col-md-5 col-sm-6">
-                            <div class="single-contact-box">
-                                <div class="contact-adress">
-                                    <div class="contact-add-head">
-                                        <h3>Rajesh Kumar</h3>
-                                        <p>Senior iOS Developer</p>
-                                    </div>
-                                    <div class="contact-add-info">
-                                        <div class="single-contact-add-info">
-                                            <h3>phone</h3>
-                                            <p><a href="tel:+923312746166">+92 331 2746166</a></p>
-                                        </div>
-                                        <div class="single-contact-add-info">
-                                            <h3>email</h3>
-                                            <p><a href="mailto:rajeshpremani68@gmail.com">rajeshpremani68@gmail.com</a></p>
-                                        </div>
-                                        <div class="single-contact-add-info">
-                                            <h3>linkedin</h3>
-                                            <p><a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rajeshpremani</a></p>
-                                        </div>
-                                        <div class="single-contact-add-info">
-                                            <h3>github</h3>
-                                            <p><a href="https://github.com/rajeshpremani" target="_blank" rel="noopener noreferrer">github.com/rajeshpremani</a></p>
-                                        </div>
-                                    </div>
+
+                            <!-- Alternatif -->
+                            <div class="col-md-4 col-sm-6">
+                                <article class="project-card">
+                                <h3>Alternatif Bank</h3>
+                                <span class="project-tag">Fintech</span>
+
+                                <p class="project-description">
+                                    Delivered end-to-end mobile banking features from requirement analysis to production
+                                    for a commercial banking platform serving customers in Turkey.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Swift</span>
+                                    <span>UIKit</span>
+                                    <span>SSL Pinning</span>
+                                    <span>REST APIs</span>
                                 </div>
-                                <div class="hm-foot-icon">
-                                    <ul>
-                                        <li><a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://github.com/rajeshpremani" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
-                                        <li><a href="mailto:rajeshpremani68@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                                        <li><a href="tel:+923312746166"><i class="fa fa-phone"></i></a></li>
-                                    </ul>
+
+                                <p class="project-impact">
+                                    <strong>Impact:</strong> Contributed to stable releases and improved user experience in production.
+                                </p>
+                                </article>
+                            </div>
+
+                            <!-- eCrediMax -->
+                            <div class="col-md-4 col-sm-6">
+                                <article class="project-card">
+                                <h3>eCrediMax</h3>
+                                <span class="project-tag">Onboarding / Fintech</span>
+
+                                <p class="project-description">
+                                    Led iOS development for a digital onboarding platform enabling users to apply
+                                    for credit and debit cards with identity verification.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Swift</span>
+                                    <span>UIKit</span>
+                                    <span>VIPER</span>
+                                    <span>Jumio SDK</span>
+                                    <span>REST APIs</span>
                                 </div>
+
+                                <p class="project-impact">
+                                    <strong>Impact:</strong> Enabled 8,000+ users to complete onboarding digitally.
+                                </p>
+                                </article>
+                            </div>
+
+                            <!-- Faysal Digibank -->
+                            <div class="col-md-4 col-sm-6">
+                                <article class="project-card">
+                                <h3>Faysal Digibank</h3>
+                                <span class="project-tag">Large-scale Banking</span>
+
+                                <p class="project-description">
+                                    Contributed to a large-scale mobile banking platform covering account management,
+                                    transactions, and secure data handling.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Swift</span>
+                                    <span>MVC</span>
+                                    <span>Core Data</span>
+                                    <span>SSL Pinning</span>
+                                    <span>Data Encryption</span>
+                                </div>
+
+                                <p class="project-impact">
+                                    <strong>Impact:</strong> Supported a platform with 350,000+ registered users.
+                                </p>
+                                </article>
+                            </div>
+
+                            <!-- mBankIslami -->
+                            <div class="col-md-4 col-sm-6">
+                                <article class="project-card">
+                                <h3>mBankIslami</h3>
+                                <span class="project-tag">Fintech</span>
+
+                                <p class="project-description">
+                                    Built and maintained a mobile banking app providing seamless financial services
+                                    and secure transactions for customers.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Swift</span>
+                                    <span>MVVM</span>
+                                    <span>Realm</span>
+                                    <span>SSL Pinning</span>
+                                </div>
+
+                                <p class="project-impact">
+                                    <strong>Impact:</strong> Used by 150,000+ customers with reliable performance.
+                                </p>
+                                </article>
+                            </div>
+
+                            <!-- Minhas -->
+                            <div class="col-md-4 col-sm-6">
+                                <article class="project-card">
+                                <h3>Minhas Portal & CCiConnect</h3>
+                                <span class="project-tag">Enterprise Apps</span>
+
+                                <p class="project-description">
+                                    Developed internal business applications for employee workflows, attendance,
+                                    payroll access, and sales force monitoring.
+                                </p>
+
+                                <div class="project-tech">
+                                    <span>Swift</span>
+                                    <span>MVC</span>
+                                    <span>Core Data</span>
+                                    <span>REST APIs</span>
+                                </div>
+
+                                <p class="project-impact">
+                                    <strong>Impact:</strong> Streamlined internal operations and improved workforce efficiency.
+                                </p>
+                                </article>
+                            </div>
+
                             </div>
                         </div>
                     </div>
@@ -511,19 +999,146 @@
             </div>
         </section>
 
-        <footer id="footer-copyright" class="footer-copyright">
+
+
+
+        <section id="contact" class="contact-section">
             <div class="container">
-                <div class="hm-footer-copyright text-center">
-                    <p>&copy; Rajesh Kumar. iOS developer portfolio.</p>
+                
+                <div class="section-heading text-center">
+                <h2>Let’s Work Together</h2>
+                <p class="section-subtitle">
+                    Open to iOS roles, fintech products, and long-term collaborations.
+                </p>
+                </div>
+
+                <div class="row contact-wrapper">
+
+                <!-- LEFT: CTA -->
+                <div class="col-md-6">
+                    <div class="contact-card contact-cta">
+
+                    <h3>Building reliable iOS products at scale</h3>
+
+                    <p>
+                        I specialize in mobile banking apps, secure architectures, and scalable iOS solutions.
+                        If you're looking for a developer who understands both engineering and business impact,
+                        let’s connect.
+                    </p>
+
+                    <div class="contact-actions">
+                        <a href="mailto:rajeshpremani68@gmail.com" class="btn-primary">Email Me</a>
+                        <a href="assets/download/Rajesh-Kumar-Resume.pdf" class="btn-secondary" download>
+                        Download CV
+                        </a>
+                    </div>
+
+                    </div>
+                </div>
+
+                <!-- RIGHT: INFO -->
+                <div class="col-md-6">
+                    <div class="contact-card contact-info">
+
+                    <h3>Contact Information</h3>
+
+                    <div class="contact-item">
+                        <span>📞</span>
+                        <a href="tel:+923312746166">+92 331 2746166</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>📧</span>
+                        <a href="mailto:rajeshpremani68@gmail.com">rajeshpremani68@gmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>💼</span>
+                        <a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank">
+                        linkedin.com/in/rajeshpremani
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <span>💻</span>
+                        <a href="https://github.com/rajeshpremani" target="_blank">
+                        github.com/rajeshpremani
+                        </a>
+                    </div>
+
+                    </div>
+                </div>
+
                 </div>
             </div>
+        </section>
 
-            <div id="scroll-Top">
-                <div class="return-to-top">
-                    <i class="fa fa-angle-up" id="scroll-top"></i>
+        <footer class="site-footer">
+            <div class="container">
+                
+                <div class="row footer-content">
+
+                <!-- LEFT: BRAND -->
+                <div class="col-md-4">
+                    <div class="footer-brand">
+                    <h3>Rajesh Kumar</h3>
+                    <p>
+                        Senior iOS Engineer specializing in secure mobile banking apps, 
+                        scalable architectures, and fintech solutions.
+                    </p>
+                    </div>
                 </div>
+
+                <!-- MIDDLE: QUICK LINKS -->
+                <div class="col-md-4">
+                    <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    </div>
+                </div>
+
+                <!-- RIGHT: SOCIAL -->
+                <div class="col-md-4">
+                    <div class="footer-social">
+                    <h4>Connect</h4>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank">
+                        <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/rajeshpremani" target="_blank">
+                        <i class="fa fa-github"></i>
+                        </a>
+                        <a href="mailto:rajeshpremani68@gmail.com">
+                        <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="tel:+923312746166">
+                        <i class="fa fa-phone"></i>
+                        </a>
+                    </div>
+
+                    <p class="footer-note">
+                        Open to remote & onsite opportunities
+                    </p>
+                    </div>
+                </div>
+
+                </div>
+
+                <!-- BOTTOM BAR -->
+                <div class="footer-bottom">
+                <p>© 2026 Rajesh Kumar - Senior iOS Engineer.</p>
+                </div>
+
             </div>
         </footer>
+
 
         <script src="assets/js/jquery.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
