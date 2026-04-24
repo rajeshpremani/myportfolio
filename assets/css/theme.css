@@ -1,0 +1,392 @@
+/*
+  Professional theme overrides for the site.
+  Loaded after the template CSS to modernize typography, color, and components.
+*/
+
+:root{
+  /* Minimal neutral palette */
+  --bg: #fafafa;
+  --bg-2: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f6f6f6;
+  --text: #0b1220;
+  --muted: rgba(11,18,32,0.72);
+  --muted-2: rgba(11,18,32,0.56);
+  --border: rgba(11,18,32,0.10);
+  --shadow-sm: 0 6px 18px rgba(11,18,32,0.08);
+  --shadow-md: 0 14px 38px rgba(11,18,32,0.12);
+
+  --primary: #1f2937;
+  --primary-2: #111827;
+  --primary-contrast: #ffffff;
+  --focus: rgba(17, 24, 39, 0.18);
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+}
+
+html, body{
+  max-width: 100%;
+}
+
+body{
+  font-family: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  color: var(--text);
+  background: linear-gradient(180deg, var(--bg-2), var(--bg));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Space Grotesk", "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-transform: none;
+}
+
+p{
+  color: var(--muted);
+  font-size: 15px;
+}
+
+a{
+  color: inherit;
+}
+
+a:hover, a:focus{
+  color: var(--primary);
+}
+
+/* Navbar */
+nav.navbar.bootsnav{
+  background: rgba(255,255,255,0.92);
+  box-shadow: 0 10px 30px rgba(11,18,32,0.08);
+  border-bottom: 1px solid rgba(11,18,32,0.08);
+}
+
+.navbar-header a.navbar-brand,
+.navbar-header a.navbar-brand:hover,
+.navbar-header a.navbar-brand:focus{
+  color: var(--text);
+  letter-spacing: 0.02em;
+}
+
+nav.navbar.bootsnav ul.nav > li > a:hover,
+nav.navbar.bootsnav ul.nav > li > a:focus,
+nav.navbar.bootsnav ul.nav > li.active > a{
+  color: var(--primary);
+}
+
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active > a{
+  color: var(--primary);
+}
+
+nav.navbar.bootsnav .navbar-toggle{
+  border-color: rgba(17, 24, 39, 0.30);
+}
+nav.navbar.bootsnav .navbar-toggle i{ color: var(--primary); }
+
+/* Section titles */
+.section-heading h2{
+  border-bottom-color: rgba(226, 232, 240, 0.10);
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-subtitle{
+  color: var(--muted-2);
+}
+
+/* Shared section spacing */
+.what-i-do,
+.education-section,
+.certifications-section,
+.contact-section{
+  padding: 80px 0;
+}
+
+.education-section,
+.certifications-section,
+.contact-section{
+  background: var(--surface-2);
+}
+
+/* Hero */
+.welcome-hero{
+  background: url(../images/about/welcome-banner.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.welcome-hero:before{
+  background: rgba(11, 18, 32, 0.68);
+}
+
+.header-text{
+  padding-top: 10px;
+}
+
+.header-text h2{
+  text-transform: none;
+  letter-spacing: -0.03em;
+}
+
+.header-text p{
+  text-transform: none;
+  letter-spacing: 0;
+  opacity: 0.9;
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-label{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.20);
+  color: rgba(255,255,255,0.92);
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+
+.hero-actions{
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.header-text a{
+  width: auto;
+  min-width: 190px;
+  height: 54px;
+  line-height: 54px;
+  padding: 0 18px;
+  border-radius: 12px;
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--primary-contrast);
+  box-shadow: 0 10px 26px rgba(11,18,32,0.16);
+  font-weight: 600;
+}
+.header-text a:hover{
+  background: var(--primary-2);
+  border-color: var(--primary-2);
+  box-shadow: 0 14px 34px rgba(11,18,32,0.18);
+}
+.header-text a.secondary-cta{
+  background: rgba(255,255,255,0.16);
+  border: 1px solid rgba(255,255,255,0.22);
+  color: rgba(255,255,255,0.95);
+  box-shadow: none;
+}
+.header-text a.secondary-cta:hover{
+  background: rgba(255,255,255,0.22);
+  border-color: rgba(255,255,255,0.28);
+}
+
+/* Cards */
+.card,
+.project-card,
+.education-card,
+.cert-card,
+.contact-card{
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.card{
+  padding: 22px;
+}
+
+.project-card,
+.education-card,
+.cert-card{
+  padding: 22px;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.project-card:hover,
+.education-card:hover,
+.cert-card:hover,
+.contact-card:hover{
+  box-shadow: var(--shadow-md);
+  border-color: rgba(11,18,32,0.16);
+}
+
+.project-tag{
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  background: rgba(11,18,32,0.06);
+  color: rgba(11,18,32,0.70);
+}
+
+.project-tech span,
+.learning-tags span,
+.cert-badge{
+  background: rgba(11,18,32,0.05);
+  color: rgba(11,18,32,0.72);
+  border: 1px solid rgba(11,18,32,0.08);
+  border-radius: 10px;
+}
+
+.project-impact strong{
+  color: var(--text);
+}
+
+/* Contact */
+.contact-wrapper{
+  margin-top: 40px;
+}
+
+.contact-item{
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: var(--muted);
+}
+.contact-item a{
+  color: var(--text);
+}
+.contact-item a:hover{
+  color: var(--primary);
+}
+.contact-item span{
+  margin-right: 10px;
+}
+
+/* About: tighten colors and footer strip */
+.single-about-txt p{
+  color: var(--muted);
+  border-bottom-color: rgba(15, 23, 42, 0.10);
+}
+
+.about-list-icon{
+  background: var(--bg);
+}
+
+.about-list-icon ul li a{
+  border-color: rgba(255,255,255,0.28);
+}
+
+/* Skills */
+.progress-bar{
+  background: var(--primary);
+}
+.single-progress-txt h3,
+.tooltip > .tooltip-inner{
+  color: var(--primary-2);
+}
+
+/* Experience timeline accents */
+.timeline-content span>i, .experience-time span>i,
+.timeline-horizontal-border i{
+  color: var(--primary);
+}
+
+/* Contact buttons */
+.btn-primary,
+.contact-actions .btn-primary{
+  background: var(--primary);
+  color: var(--primary-contrast);
+  border: 1px solid var(--primary);
+  box-shadow: 0 10px 26px rgba(11,18,32,0.14);
+}
+
+.btn-primary:hover,
+.contact-actions .btn-primary:hover{
+  background: var(--primary-2);
+  border-color: var(--primary-2);
+  color: var(--primary-contrast);
+}
+
+.btn-secondary,
+.contact-actions .btn-secondary{
+  background: #fff;
+  border: 1px solid rgba(11, 18, 32, 0.16);
+  color: var(--text);
+}
+
+.btn-secondary:hover,
+.contact-actions .btn-secondary:hover{
+  border-color: rgba(11, 18, 32, 0.22);
+  box-shadow: 0 14px 34px rgba(11,18,32,0.10);
+}
+
+.btn-primary:focus,
+.btn-secondary:focus,
+.header-text a:focus{
+  outline: none;
+  box-shadow: 0 0 0 4px var(--focus);
+}
+
+/* Footer */
+.site-footer{
+  background: #0b1220;
+  border-top: 1px solid rgba(255,255,255,0.10);
+}
+.footer-brand p,
+.footer-links a,
+.social-icons a,
+.footer-note,
+.footer-bottom{
+  color: rgba(226, 232, 240, 0.78);
+}
+
+/* Prevent hover shadows/transforms from "overlapping" adjacent items visually */
+.project-card,
+.education-card,
+.cert-card,
+.contact-card{
+  position: relative;
+  z-index: 0;
+}
+.project-card:hover,
+.education-card:hover,
+.cert-card:hover,
+.contact-card:hover{
+  z-index: 1;
+}
+
+/* Alignment helpers for Bootstrap 3 float grid */
+.portfolio .row [class*="col-"],
+.education-section .row [class*="col-"],
+.certifications-section .row [class*="col-"],
+.contact-section .row [class*="col-"]{
+  margin-bottom: 20px;
+}
+.footer-links a:hover,
+.social-icons a:hover{
+  color: #fff;
+}
+.footer-bottom{
+  border-top-color: rgba(226, 232, 240, 0.10);
+}
+
+/* Scroll-to-top */
+#scroll-Top .return-to-top{
+  background: var(--primary);
+  border-color: var(--primary);
+}
+#scroll-Top .return-to-top:hover{
+  background: #fff;
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
