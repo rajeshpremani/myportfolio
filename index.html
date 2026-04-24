@@ -65,7 +65,7 @@
 
         <section id="welcome-hero" class="welcome-hero">
             <div class="container">
-                <div class="row">
+                <div class="row equal-height">
                     <div class="col-md-12 text-center">
                         <div class="header-text">
                             <span class="hero-label">Karachi, Pakistan</span>
@@ -177,22 +177,25 @@
         <section id="education" class="education-section">
             <div class="container">
 
-                <div class="section-heading text-center">
-                <h2>Education</h2>
-                <p class="section-subtitle">Academic background and continuous learning<br></p>
-                </div>
+                <header class="section-header text-center">
+                    <h2>Education</h2>
+                    <p class="section-subtitle">Academic background and continuous learning</p>
+                </header>
 
-                <div class="row">
+                <div class="row equal-height">
 
                 <!-- Degree -->
                 <div class="col-md-6">
                     <div class="education-card">
-                        <h3>Bachelor of Computer Science</h3>
-                        <p class="education-meta">2015 – 2018</p>
-                        <h4>University of Sindh</h4>
-                        <p class="education-location">Jamshoro, Pakistan</p>
+                        <div class="card-kicker">
+                            <span class="card-kicker-icon"><i class="fa fa-graduation-cap" aria-hidden="true"></i></span>
+                            <span class="card-kicker-text">2015 – 2018</span>
+                        </div>
 
-                        <p class="education-desc">
+                        <h3 class="card-title">Bachelor of Computer Science</h3>
+                        <p class="card-subtitle">University of Sindh · Jamshoro, Pakistan</p>
+
+                        <p class="card-body">
                             Built a strong foundation in software engineering, algorithms, and problem solving,
                             which shaped my approach to scalable and reliable mobile application development.
                         </p>
@@ -202,10 +205,13 @@
                 <!-- Continuous Learning -->
                 <div class="col-md-6">
                     <div class="education-card">
-                        <h3>Continuous Learning</h3>
-                        <p class="education-meta">Ongoing</p>
+                        <div class="card-kicker">
+                            <span class="card-kicker-icon"><i class="fa fa-book" aria-hidden="true"></i></span>
+                            <span class="card-kicker-text">Ongoing</span>
+                        </div>
+                        <h3 class="card-title">Continuous Learning</h3>
 
-                        <p class="education-desc">
+                        <p class="card-body">
                         Actively expanding my technical expertise beyond mobile development to better understand
                         full-stack system architecture, backend services, and scalable application design.
                         Continuously improving my iOS engineering skills while exploring backend technologies
@@ -231,10 +237,10 @@
         <section id="certifications" class="certifications-section">
             <div class="container">
 
-                <div class="section-heading text-center">
-                <h2>Licenses & Certifications</h2>
-                <p class="section-subtitle">Continuous learning and professional development</p>
-                </div>
+                <header class="section-header text-center">
+                    <h2>Licenses & Certifications</h2>
+                    <p class="section-subtitle">Professional development and continuous learning</p>
+                </header>
 
                 <div class="row">
 
@@ -242,7 +248,11 @@
                 <div class="col-md-6">
                     <div class="cert-card">
                         
-                        <h3>Async/Await & Actors — Concurrency in Swift</h3>
+                        <div class="card-kicker">
+                            <span class="card-kicker-icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                            <span class="card-kicker-text">Udemy</span>
+                        </div>
+                        <h3 class="card-title">Async/Await & Actors — Concurrency in Swift</h3>
 
                         <div class="cert-badges">
                         <span class="cert-badge">Concurrency</span>
@@ -250,15 +260,13 @@
                         <span class="cert-badge">Actors</span>
                         </div>
 
-                        <p class="cert-org">Udemy</p>
-
-                        <p class="cert-desc">
+                        <p class="card-body">
                         Advanced concurrency concepts including async/await, actors, structured concurrency,
                         task groups, and detached tasks for building scalable and thread-safe iOS applications.
                         </p>
 
-                        <a href="https://www.udemy.com/certificate/UC-49c4b525-06b3-4e87-947a-587347ea6fde/" target="_blank" class="cert-link">
-                        View Credential
+                        <a href="https://www.udemy.com/certificate/UC-49c4b525-06b3-4e87-947a-587347ea6fde/" target="_blank" rel="noopener noreferrer" class="link-button">
+                            View Credential
                         </a>
 
                     </div>
@@ -267,7 +275,11 @@
                 <!-- Certification 2 -->
                 <div class="col-md-6">
                     <div class="cert-card">
-                        <h3>Swift 5: Protocol-Oriented Programming</h3>
+                        <div class="card-kicker">
+                            <span class="card-kicker-icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                            <span class="card-kicker-text">LinkedIn Learning</span>
+                        </div>
+                        <h3 class="card-title">Swift 5: Protocol-Oriented Programming</h3>
 
                         <div class="cert-badges">
                             <span class="cert-badge">POP</span>
@@ -275,13 +287,12 @@
                             <span class="cert-badge">Code Reusability</span>
                         </div>
 
-                        <p class="cert-org">LinkedIn Learning</p>
-                        <p class="cert-desc">
+                        <p class="card-body">
                         Applied protocol-oriented design principles to build modular, reusable, and maintainable
                         Swift codebases aligned with modern iOS architecture patterns.
                         </p>
-                        <a href="https://www.linkedin.com/learning/certificates/f95f56fa344c79b8a3012212fcc883bab77ef311ca0e5a0db990785cc1c5ace4" target="_blank" class="cert-link">
-                        View Credential
+                        <a href="https://www.linkedin.com/learning/certificates/f95f56fa344c79b8a3012212fcc883bab77ef311ca0e5a0db990785cc1c5ace4" target="_blank" rel="noopener noreferrer" class="link-button">
+                            View Credential
                         </a>
                     </div>
                 </div>
@@ -289,7 +300,11 @@
                 <!-- Certification 3 -->
                 <div class="col-md-6">
                 <div class="cert-card">
-                    <h3>iOS Development: Threading & Grand Central Dispatch</h3>
+                    <div class="card-kicker">
+                        <span class="card-kicker-icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                        <span class="card-kicker-text">LinkedIn Learning</span>
+                    </div>
+                    <h3 class="card-title">iOS Development: Threading &amp; Grand Central Dispatch</h3>
 
                     <div class="cert-badges">
                         <span class="cert-badge">Concurrency</span>
@@ -297,13 +312,12 @@
                         <span class="cert-badge">Optimization</span>
                     </div>
 
-                    <p class="cert-org">LinkedIn Learning</p>
-                    <p class="cert-desc">
+                    <p class="card-body">
                     Gained a deep understanding of multithreading, GCD, and performance optimization
                     techniques for responsive and efficient iOS applications.
                     </p>
-                    <a href="https://www.linkedin.com/learning/certificates/c0c10a08124308173250b1d21245875aeb66ebf19df1adc2abf0f273d285de70" target="_blank" class="cert-link">
-                    View Credential
+                    <a href="https://www.linkedin.com/learning/certificates/c0c10a08124308173250b1d21245875aeb66ebf19df1adc2abf0f273d285de70" target="_blank" rel="noopener noreferrer" class="link-button">
+                        View Credential
                     </a>
                 </div>
                 </div>
@@ -311,7 +325,11 @@
                 <!-- Certification 4 -->
                 <div class="col-md-6">
                 <div class="cert-card">
-                    <h3>Practical Design Patterns in Swift</h3>
+                    <div class="card-kicker">
+                        <span class="card-kicker-icon"><i class="fa fa-certificate" aria-hidden="true"></i></span>
+                        <span class="card-kicker-text">LinkedIn Learning</span>
+                    </div>
+                    <h3 class="card-title">Practical Design Patterns in Swift</h3>
 
                     <div class="cert-badges">
                         <span class="cert-badge">Design Patterns</span>
@@ -319,13 +337,12 @@
                         <span class="cert-badge">Scalability</span>
                     </div>
 
-                    <p class="cert-org">LinkedIn Learning</p>
-                    <p class="cert-desc">
+                    <p class="card-body">
                     Explored real-world implementation of design patterns to improve code structure,
                     scalability, and maintainability in production iOS applications.
                     </p>
-                    <a href="https://www.linkedin.com/learning/certificates/870c280afa61150cb6b383b11394aebdf3afd9293423ba39efe6e9d44d8fef75" target="_blank" class="cert-link">
-                    View Credential
+                    <a href="https://www.linkedin.com/learning/certificates/870c280afa61150cb6b383b11394aebdf3afd9293423ba39efe6e9d44d8fef75" target="_blank" rel="noopener noreferrer" class="link-button">
+                        View Credential
                     </a>
                 </div>
                 </div>
@@ -620,9 +637,10 @@
         <!-- PROJECTS -->
         <section id="portfolio" class="portfolio">
             <div class="portfolio-details">
-                <div class="section-heading text-center">
-                    <h2>projects</h2>
-                </div>
+                <header class="section-header text-center">
+                    <h2>Projects</h2>
+                    <p class="section-subtitle">Selected fintech and enterprise work shipped to production</p>
+                </header>
                 <div class="container">
                     <div class="portfolio-content">
                         <div class="row project-grid">
@@ -630,10 +648,12 @@
                             <!-- Ziraat -->
                             <div class="col-md-4 col-sm-6">
                                 <article class="project-card">
-                                <h3>Ziraat Bank Azerbaijan</h3>
-                                <span class="project-tag">Fintech</span>
+                                <div class="project-top">
+                                    <h3 class="card-title">Ziraat Bank Azerbaijan</h3>
+                                    <span class="project-tag">Fintech</span>
+                                </div>
 
-                                <p class="project-description">
+                                <p class="card-body">
                                     Developed a secure mobile banking application enabling users to manage accounts,
                                     transfer funds, and perform transactions with encrypted communication.
                                 </p>
@@ -645,19 +665,19 @@
                                     <span>REST APIs</span>
                                 </div>
 
-                                <p class="project-impact">
-                                    <strong>Impact:</strong> Improved transaction security and reliability for thousands of users.
-                                </p>
+                                <p class="project-impact"><strong>Impact:</strong> Improved transaction security and reliability for thousands of users.</p>
                                 </article>
                             </div>
 
                             <!-- Alternatif -->
                             <div class="col-md-4 col-sm-6">
                                 <article class="project-card">
-                                <h3>Alternatif Bank</h3>
-                                <span class="project-tag">Fintech</span>
+                                <div class="project-top">
+                                    <h3 class="card-title">Alternatif Bank</h3>
+                                    <span class="project-tag">Fintech</span>
+                                </div>
 
-                                <p class="project-description">
+                                <p class="card-body">
                                     Delivered end-to-end mobile banking features from requirement analysis to production
                                     for a commercial banking platform serving customers in Turkey.
                                 </p>
@@ -669,19 +689,19 @@
                                     <span>REST APIs</span>
                                 </div>
 
-                                <p class="project-impact">
-                                    <strong>Impact:</strong> Contributed to stable releases and improved user experience in production.
-                                </p>
+                                <p class="project-impact"><strong>Impact:</strong> Contributed to stable releases and improved user experience in production.</p>
                                 </article>
                             </div>
 
                             <!-- eCrediMax -->
                             <div class="col-md-4 col-sm-6">
                                 <article class="project-card">
-                                <h3>eCrediMax</h3>
-                                <span class="project-tag">Onboarding / Fintech</span>
+                                <div class="project-top">
+                                    <h3 class="card-title">eCrediMax</h3>
+                                    <span class="project-tag">Onboarding / Fintech</span>
+                                </div>
 
-                                <p class="project-description">
+                                <p class="card-body">
                                     Led iOS development for a digital onboarding platform enabling users to apply
                                     for credit and debit cards with identity verification.
                                 </p>
@@ -694,19 +714,19 @@
                                     <span>REST APIs</span>
                                 </div>
 
-                                <p class="project-impact">
-                                    <strong>Impact:</strong> Enabled 8,000+ users to complete onboarding digitally.
-                                </p>
+                                <p class="project-impact"><strong>Impact:</strong> Enabled 8,000+ users to complete onboarding digitally.</p>
                                 </article>
                             </div>
 
                             <!-- Faysal Digibank -->
                             <div class="col-md-4 col-sm-6">
                                 <article class="project-card">
-                                <h3>Faysal Digibank</h3>
-                                <span class="project-tag">Large-scale Banking</span>
+                                <div class="project-top">
+                                    <h3 class="card-title">Faysal Digibank</h3>
+                                    <span class="project-tag">Large-scale Banking</span>
+                                </div>
 
-                                <p class="project-description">
+                                <p class="card-body">
                                     Contributed to a large-scale mobile banking platform covering account management,
                                     transactions, and secure data handling.
                                 </p>
@@ -719,19 +739,19 @@
                                     <span>Data Encryption</span>
                                 </div>
 
-                                <p class="project-impact">
-                                    <strong>Impact:</strong> Supported a platform with 350,000+ registered users.
-                                </p>
+                                <p class="project-impact"><strong>Impact:</strong> Supported a platform with 350,000+ registered users.</p>
                                 </article>
                             </div>
 
                             <!-- mBankIslami -->
                             <div class="col-md-4 col-sm-6">
                                 <article class="project-card">
-                                <h3>mBankIslami</h3>
-                                <span class="project-tag">Fintech</span>
+                                <div class="project-top">
+                                    <h3 class="card-title">mBankIslami</h3>
+                                    <span class="project-tag">Fintech</span>
+                                </div>
 
-                                <p class="project-description">
+                                <p class="card-body">
                                     Built and maintained a mobile banking app providing seamless financial services
                                     and secure transactions for customers.
                                 </p>
@@ -743,19 +763,19 @@
                                     <span>SSL Pinning</span>
                                 </div>
 
-                                <p class="project-impact">
-                                    <strong>Impact:</strong> Used by 150,000+ customers with reliable performance.
-                                </p>
+                                <p class="project-impact"><strong>Impact:</strong> Used by 150,000+ customers with reliable performance.</p>
                                 </article>
                             </div>
 
                             <!-- Minhas -->
                             <div class="col-md-4 col-sm-6">
                                 <article class="project-card">
-                                <h3>Minhas Portal & CCiConnect</h3>
-                                <span class="project-tag">Enterprise Apps</span>
+                                <div class="project-top">
+                                    <h3 class="card-title">Minhas Portal &amp; CCiConnect</h3>
+                                    <span class="project-tag">Enterprise Apps</span>
+                                </div>
 
-                                <p class="project-description">
+                                <p class="card-body">
                                     Developed internal business applications for employee workflows, attendance,
                                     payroll access, and sales force monitoring.
                                 </p>
@@ -767,9 +787,7 @@
                                     <span>REST APIs</span>
                                 </div>
 
-                                <p class="project-impact">
-                                    <strong>Impact:</strong> Streamlined internal operations and improved workforce efficiency.
-                                </p>
+                                <p class="project-impact"><strong>Impact:</strong> Streamlined internal operations and improved workforce efficiency.</p>
                                 </article>
                             </div>
 
@@ -784,14 +802,12 @@
         <section id="contact" class="contact-section">
             <div class="container">
                 
-                <div class="section-heading text-center">
-                <h2>Let’s Work Together</h2>
-                <p class="section-subtitle">
-                    Open to iOS roles, fintech products, and long-term collaborations.
-                </p>
-                </div>
+                <header class="section-header text-center">
+                    <h2>Let’s Work Together</h2>
+                    <p class="section-subtitle">Open to iOS roles, fintech products, and long-term collaborations.</p>
+                </header>
 
-                <div class="row contact-wrapper">
+                <div class="row contact-wrapper equal-height">
 
                 <!-- LEFT: CTA -->
                 <div class="col-md-6">
@@ -822,24 +838,24 @@
                     <h3>Contact Information</h3>
 
                     <div class="contact-item">
-                        <span>📞</span>
+                        <span class="contact-icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
                         <a href="tel:+923312746166">+92 331 2746166</a>
                     </div>
 
                     <div class="contact-item">
-                        <span>📧</span>
+                        <span class="contact-icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                         <a href="mailto:rajeshpremani68@gmail.com">rajeshpremani68@gmail.com</a>
                     </div>
 
                     <div class="contact-item">
-                        <span>💼</span>
+                        <span class="contact-icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
                         <a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank">
                         linkedin.com/in/rajeshpremani
                         </a>
                     </div>
 
                     <div class="contact-item">
-                        <span>💻</span>
+                        <span class="contact-icon"><i class="fa fa-github" aria-hidden="true"></i></span>
                         <a href="https://github.com/rajeshpremani" target="_blank">
                         github.com/rajeshpremani
                         </a>
@@ -888,16 +904,16 @@
                     <h4>Connect</h4>
 
                     <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank">
+                        <a href="https://www.linkedin.com/in/rajeshpremani/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                         <i class="fa fa-linkedin"></i>
                         </a>
-                        <a href="https://github.com/rajeshpremani" target="_blank">
+                        <a href="https://github.com/rajeshpremani" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                         <i class="fa fa-github"></i>
                         </a>
-                        <a href="mailto:rajeshpremani68@gmail.com">
+                        <a href="mailto:rajeshpremani68@gmail.com" aria-label="Email">
                         <i class="fa fa-envelope"></i>
                         </a>
-                        <a href="tel:+923312746166">
+                        <a href="tel:+923312746166" aria-label="Phone">
                         <i class="fa fa-phone"></i>
                         </a>
                     </div>
