@@ -288,6 +288,15 @@
             margin-top: 10px;
             }
 
+            .education-section .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-section .col-md-6 {
+  display: flex;
+}
+
             .education-card {
             background: #fff;
             padding: 25px;
@@ -325,6 +334,81 @@
             margin: 5px 5px 0 0;
             border-radius: 6px;
             font-size: 12px;
+            }
+
+            .certifications-section {
+            padding: 80px 0;
+            background: #f8fafc;
+            }
+
+            .section-subtitle {
+            color: #666;
+            margin-top: 10px;
+            }
+
+            .cert-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+            transition: 0.3s;
+            }
+
+            .cert-card:hover {
+            transform: translateY(-5px);
+            }
+
+            .cert-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            }
+
+            .cert-org {
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 10px;
+            }
+
+            .cert-desc {
+            color: #555;
+            margin-bottom: 15px;
+            }
+
+            .cert-link {
+            text-decoration: none;
+            font-size: 14px;
+            color: #2563eb;
+            }
+
+            .certifications-section .row {
+            display: flex;
+            flex-wrap: wrap;
+            }
+
+            .certifications-section .col-md-6 {
+            display: flex;
+            }
+
+            .cert-card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            }
+
+            .cert-badges {
+            margin: 8px 0 12px;
+            }
+
+            .cert-badge {
+            display: inline-block;
+            background: #eef2ff;
+            color: #4f46e5;
+            padding: 4px 8px;
+            margin: 3px 5px 0 0;
+            border-radius: 6px;
+            font-size: 11px;
             }
             
         </style>
@@ -481,6 +565,7 @@
             </div>
         </section>
 
+        <!-- Education -->
         <section id="education" class="education-section">
             <div class="container">
 
@@ -494,15 +579,15 @@
                 <!-- Degree -->
                 <div class="col-md-6">
                     <div class="education-card">
-                    <h3>Bachelor of Computer Science</h3>
-                    <p class="education-meta">2015 – 2018</p>
-                    <h4>University of Sindh</h4>
-                    <p class="education-location">Jamshoro, Pakistan</p>
+                        <h3>Bachelor of Computer Science</h3>
+                        <p class="education-meta">2015 – 2018</p>
+                        <h4>University of Sindh</h4>
+                        <p class="education-location">Jamshoro, Pakistan</p>
 
-                    <p class="education-desc">
-                        Built a strong foundation in software engineering, algorithms, and problem solving,
-                        which shaped my approach to scalable and reliable mobile application development.
-                    </p>
+                        <p class="education-desc">
+                            Built a strong foundation in software engineering, algorithms, and problem solving,
+                            which shaped my approach to scalable and reliable mobile application development.
+                        </p>
                     </div>
                 </div>
 
@@ -529,25 +614,113 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-md-6">
-                    <div class="education-card">
-                    <h3>Continuous Learning</h3>
-                    <p class="education-meta">Ongoing</p>
+                </div>
 
-                    <p class="education-desc">
-                        Actively exploring modern iOS technologies including SwiftUI, Combine, and advanced
-                        app architecture patterns. Regularly follow industry updates and best practices
-                        to stay aligned with evolving mobile engineering standards.
+            </div>
+        </section>
+
+        <!-- Licenses & certifications-->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+
+                <div class="section-heading text-center">
+                <h2>Licenses & Certifications</h2>
+                <p class="section-subtitle">Continuous learning and professional development</p>
+                </div>
+
+                <div class="row">
+
+                <!-- Certification 1 -->
+                <div class="col-md-6">
+                    <div class="cert-card">
+                        
+                        <h3>Async/Await & Actors — Concurrency in Swift</h3>
+
+                        <div class="cert-badges">
+                        <span class="cert-badge">Concurrency</span>
+                        <span class="cert-badge">Async/Await</span>
+                        <span class="cert-badge">Actors</span>
+                        </div>
+
+                        <p class="cert-org">Udemy</p>
+
+                        <p class="cert-desc">
+                        Advanced concurrency concepts including async/await, actors, structured concurrency,
+                        task groups, and detached tasks for building scalable and thread-safe iOS applications.
+                        </p>
+
+                        <a href="https://www.udemy.com/certificate/UC-49c4b525-06b3-4e87-947a-587347ea6fde/" target="_blank" class="cert-link">
+                        View Credential
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="col-md-6">
+                    <div class="cert-card">
+                        <h3>Swift 5: Protocol-Oriented Programming</h3>
+
+                        <div class="cert-badges">
+                            <span class="cert-badge">POP</span>
+                            <span class="cert-badge">Abstraction</span>
+                            <span class="cert-badge">Code Reusability</span>
+                        </div>
+
+                        <p class="cert-org">LinkedIn Learning</p>
+                        <p class="cert-desc">
+                        Applied protocol-oriented design principles to build modular, reusable, and maintainable
+                        Swift codebases aligned with modern iOS architecture patterns.
+                        </p>
+                        <a href="https://www.linkedin.com/learning/certificates/f95f56fa344c79b8a3012212fcc883bab77ef311ca0e5a0db990785cc1c5ace4" target="_blank" class="cert-link">
+                        View Credential
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="col-md-6">
+                <div class="cert-card">
+                    <h3>iOS Development: Threading & Grand Central Dispatch</h3>
+
+                    <div class="cert-badges">
+                        <span class="cert-badge">Concurrency</span>
+                        <span class="cert-badge">Dispatch Queues</span>
+                        <span class="cert-badge">Optimization</span>
+                    </div>
+
+                    <p class="cert-org">LinkedIn Learning</p>
+                    <p class="cert-desc">
+                    Gained a deep understanding of multithreading, GCD, and performance optimization
+                    techniques for responsive and efficient iOS applications.
                     </p>
+                    <a href="https://www.linkedin.com/learning/certificates/c0c10a08124308173250b1d21245875aeb66ebf19df1adc2abf0f273d285de70" target="_blank" class="cert-link">
+                    View Credential
+                    </a>
+                </div>
+                </div>
 
-                    <div class="learning-tags">
-                        <span>SwiftUI</span>
-                        <span>Combine</span>
-                        <span>Clean Architecture</span>
-                        <span>System Design</span>
+                <!-- Certification 4 -->
+                <div class="col-md-6">
+                <div class="cert-card">
+                    <h3>Practical Design Patterns in Swift</h3>
+
+                    <div class="cert-badges">
+                        <span class="cert-badge">Design Patterns</span>
+                        <span class="cert-badge">Architecture</span>
+                        <span class="cert-badge">Scalability</span>
                     </div>
-                    </div>
-                </div> -->
+
+                    <p class="cert-org">LinkedIn Learning</p>
+                    <p class="cert-desc">
+                    Explored real-world implementation of design patterns to improve code structure,
+                    scalability, and maintainability in production iOS applications.
+                    </p>
+                    <a href="https://www.linkedin.com/learning/certificates/870c280afa61150cb6b383b11394aebdf3afd9293423ba39efe6e9d44d8fef75" target="_blank" class="cert-link">
+                    View Credential
+                    </a>
+                </div>
+                </div>
 
                 </div>
 
@@ -999,9 +1172,7 @@
             </div>
         </section>
 
-
-
-
+        <!-- CONTACT -->
         <section id="contact" class="contact-section">
             <div class="container">
                 
