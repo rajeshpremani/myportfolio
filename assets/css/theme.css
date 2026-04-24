@@ -443,6 +443,16 @@ nav.navbar.bootsnav .navbar-toggle i{ color: var(--primary); }
   transition: box-shadow 180ms ease, border-color 180ms ease;
 }
 
+/* Projects: equal-height columns */
+.project-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.project-impact{
+  margin-top: auto;
+}
+
 /* Certifications: keep consistent height + fixed CTA placement */
 .cert-card{
   height: 100%;
