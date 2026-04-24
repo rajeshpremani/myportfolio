@@ -443,6 +443,20 @@ nav.navbar.bootsnav .navbar-toggle i{ color: var(--primary); }
   transition: box-shadow 180ms ease, border-color 180ms ease;
 }
 
+/* Certifications: keep consistent height + fixed CTA placement */
+.cert-card{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cert-card .link-button{
+  margin-top: auto;
+  align-self: flex-start;
+}
+.cert-card .link-button:hover{
+  transform: none;
+}
+
 .project-top{
   display: flex;
   align-items: flex-start;
